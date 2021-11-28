@@ -16,7 +16,10 @@ const Card = () => {
         })
     }
 
-    showProduct();
+    window.onload = () => {
+       showProduct(); 
+    }
+    
 
     const deleteProduct = (_id) => {
         axios.delete(url+"products/"+_id).then(resp => {
